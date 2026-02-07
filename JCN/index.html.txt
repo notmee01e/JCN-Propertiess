@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JCN Land Properties</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      url('https://images.unsplash.com/photo-1501183638710-841dd1904471') center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: #1f2a35;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    section {
+      padding: 50px 15px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+      font-size: 1.8rem;
+    }
+
+    .listings {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .listing {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,.1);
+    }
+
+    .listing img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .listing-content {
+      padding: 15px;
+    }
+
+    .price {
+      color: #0a7d32;
+      font-weight: bold;
+      margin-top: 8px;
+      font-size: 1.1rem;
+    }
+
+    .cta {
+      background: #1f2a35;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta button {
+      background: #f0b429;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      width: 100%;
+      background: #1f2a35;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #141b23;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* FLOATING CONTACT BUTTONS */
+    .floating {
+      position: fixed;
+      right: 15px;
+      bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+
+    .floating a {
+      text-decoration: none;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,.3);
+    }
+
+    .call { background: #0a7d32; }
+    .whatsapp { background: #25D366; }
+    .messenger { background: #1877F2; }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>JCN Land Properties</h1>
+  <p>Trusted Land Investments in the Philippines</p>
+</header>
+
+<nav>
+  <a href="#listings">Listings</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="listings">
+  <h2 class="section-title">Available Properties</h2>
+
+  <div class="listings">
+
+    <div class="listing">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+      <div class="listing-content">
+        <h3>Residential Lot – Pili, Camarines Sur</h3>
+        <p>Clean title, near schools and highway.</p>
+        <div class="price">₱1,500,000</div>
+      </div>
+    </div>
+
+    <div class="listing">
+      <img src="https://images.unsplash.com/photo-1448630360428-65456885c650">
+      <div class="listing-content">
+        <h3>Commercial Land – Naga City</h3>
+        <p>Ideal for business and rental buildings.</p>
+        <div class="price">₱4,800,000</div>
+      </div>
+    </div>
+
+    <div class="listing">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <div class="listing-content">
+        <h3>Agricultural Land – Pili Area</h3>
+        <p>Fertile land, investment ready.</p>
+        <div class="price">₱2,300,000</div>
+      </div>
+    </div>
+
+    <!-- COPY THIS BLOCK TO ADD MORE PROPERTIES -->
+    <div class="listing">
+      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+      <div class="listing-content">
+        <h3>Residential Lot – Camarines Norte</h3>
+        <p>Affordable land, peaceful location.</p>
+        <div class="price">₱980,000</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About JCN</h2>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    JCN Land Properties offers verified and affordable land investments
+    across the Philippines. We prioritize trust, transparency, and customer satisfaction.
+  </p>
+</section>
+
+<section class="cta">
+  <h2>Ready to own land?</h2>
+  <p>Message or call JCN today</p>
+  <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+    Contact Us
+  </button>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact JCN</h2>
+  <form onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon.');">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <textarea rows="5" placeholder="Your inquiry" required></textarea>
+    <button type="submit">Send Inquiry</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 JCN Land Properties | Philippines</p>
+</footer>
+
+<!-- FLOATING CONTACT BUTTONS -->
+<div class="floating">
+  <a href="tel:+639XXXXXXXXX" class="call">📞 Call</a>
+  <a href="https://wa.me/639XXXXXXXXX" class="whatsapp">💬 WhatsApp</a>
+  <a href="https://m.me/yourfacebookpage" class="messenger">📩 Messenger</a>
+</div>
+
+</body>
+</html>
